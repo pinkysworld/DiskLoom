@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pinkysworld.github.io/DiskLoom/sitemap.xml

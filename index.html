@@ -53,7 +53,7 @@
       <div class="feature-copy">
         <p class="eyebrow">Early warning</p>
         <h2>See the change, not just the current number.</h2>
-        <p>DiskLoom tracks temperature, endurance, spare capacity, media errors, unsafe shutdowns, connection events, and backup readiness. Every warning explains the signal and rule that triggered it.</p>
+        <p>DiskLoom tracks temperature, endurance, spare capacity, media errors, unsafe shutdowns, connection events, and backup readiness. Every warning explains the signal and rule that triggered it, while model-specific endurance references add useful context where available.</p>
       </div>
       <ul class="metric-list" aria-label="Monitored drive signals">
         <li><span>Temperature</span><strong>Trend</strong></li>
@@ -70,14 +70,19 @@
         <h2 id="showcase-title">Every reading, explained in plain language.</h2>
       </div>
       <figure>
-        <img src="assets/diskloom-overview.png" width="2560" height="1640"
+        <img src="assets/diskloom-overview.png" width="1600" height="900"
              alt="DiskLoom Protection overview showing drive condition, Time Machine backup readiness, and a recommended action.">
         <figcaption>Protection overview: drive condition, backup readiness, and the next useful action in one place.</figcaption>
       </figure>
       <figure>
-        <img src="assets/diskloom-detail.png" width="2560" height="1640"
-             alt="DiskLoom device detail showing SSD life remaining, written data, power-on hours, temperature, and health indicators.">
-        <figcaption>Drive detail: evidence behind the status, lifetime context, and the signals that matter.</figcaption>
+        <img src="assets/diskloom-detail.png" width="1600" height="900"
+             alt="DiskLoom device detail showing SSD life remaining, replacement guidance, written data, power-on hours, temperature, and health indicators.">
+        <figcaption>Replacement guidance: evidence, confidence, and a practical planning window instead of a vague health score.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/diskloom-field.png" width="1600" height="900"
+             alt="DiskLoom history showing temperature and endurance trends alongside population field experience context.">
+        <figcaption>History and field context: local trends, warning events, and clearly labeled population statistics that are not presented as a prediction.</figcaption>
       </figure>
     </section>
 
@@ -113,7 +118,11 @@
         </article>
         <article>
           <h3>Lifetime intelligence</h3>
-          <p>Combines reported SSD wear, write rate, and power-on age. HDD age estimates are clearly marked as heuristics, never manufacturer promises.</p>
+          <p>Combines reported SSD wear, write rate, power-on age, and bundled manufacturer endurance references. Replacement windows include their evidence and confidence.</p>
+        </article>
+        <article>
+          <h3>Field experience</h3>
+          <p>Population failure rates and typical service life add perspective. They are always labeled as reference context, never a prediction for your drive.</p>
         </article>
         <article>
           <h3>Read-only speed test</h3>
@@ -148,7 +157,7 @@
     <section class="trust-band" aria-label="Trust and safety">
       <div><strong>Read-only</strong><span>Never writes to your drives</span></div>
       <div><strong>Private &amp; local</strong><span>Telemetry stays on your Mac</span></div>
-      <div><strong>Release-ready</strong><span>Signing and notarization before publication</span></div>
+      <div><strong>Signed &amp; notarized</strong><span>Verified Apple Developer ID release</span></div>
       <div><strong>macOS 14+</strong><span>Apple silicon and Intel</span></div>
     </section>
 
@@ -165,8 +174,8 @@
         </ul>
       </div>
       <div class="pricing-actions">
-        <span class="coming-soon" aria-label="DiskLoom will be available on Gumroad soon">Coming soon on Gumroad</span>
-        <span>Draft product prepared; download follows notarization</span>
+        <a class="button primary" href="https://michelpicker.gumroad.com/l/diskloom">Buy DiskLoom</a>
+        <span>Secure checkout and instant DMG download through Gumroad</span>
       </div>
     </section>
 
@@ -186,7 +195,7 @@
         </details>
         <details>
           <summary>Is this a one-time price or a subscription?</summary>
-          <p>One payment of €39 covers up to three Macs and every DiskLoom 1.x update. There is no subscription.</p>
+          <p>One payment of €39 covers up to three Mac activations and every DiskLoom 1.x update. There is no subscription. Support can reset the activation count when a Mac is lost or replaced.</p>
         </details>
         <details>
           <summary>Is there a trial or a refund?</summary>

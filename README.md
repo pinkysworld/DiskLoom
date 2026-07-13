@@ -4,7 +4,7 @@ Static product website for DiskLoom, deployed to GitHub Pages from `main`.
 
 ## Gumroad launch
 
-The site currently shows an honest pre-launch state. Once the Gumroad product is published, replace the `coming-soon` element in `index.html` with a link to the canonical Gumroad product URL and update the trial wording to match the downloadable build.
+The site currently shows an honest pre-launch state. The Gumroad draft, 14-day in-app trial, pricing, current screenshots, and license terms are documented. Once the signed and notarized DMG is attached and the product is published, replace the `coming-soon` element in `index.html` with a link to `https://michelpicker.gumroad.com/l/diskloom`.
 
 ## Local preview
 

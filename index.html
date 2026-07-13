@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="DiskLoom is modern drive-health monitoring for macOS, with native Apple NVMe telemetry, local history, trends, and transparent compatibility reporting.">
+  <meta name="description" content="DiskLoom combines modern drive-health monitoring, lifetime trends, a read-only speed test, Time Machine readiness, and honest external-drive compatibility on macOS.">
   <meta name="theme-color" content="#f7f8f7">
   <meta property="og:title" content="DiskLoom - Drive health for macOS">
-  <meta property="og:description" content="Know what is changing inside your drives before a warning becomes a failure.">
+  <meta property="og:description" content="Drive health, lifetime trends, backup readiness, and clear next steps for macOS.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://minh.systems/DiskLoom/">
-  <meta property="og:image" content="https://minh.systems/DiskLoom/assets/diskloom-app.png">
+  <meta property="og:image" content="https://minh.systems/DiskLoom/assets/diskloom-overview.png">
   <title>DiskLoom - Drive health for macOS</title>
   <link rel="canonical" href="https://minh.systems/DiskLoom/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/diskloom-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/diskloom-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="./" aria-label="DiskLoom home"><span class="brand-mark" aria-hidden="true"></span>DiskLoom</a>
+    <a class="brand" href="./" aria-label="DiskLoom home"><img src="assets/diskloom-icon.png" alt="" width="34" height="34">DiskLoom</a>
     <nav aria-label="Primary">
       <a href="#monitoring">Monitoring</a>
-      <a href="#compatibility">Compatibility</a>
+      <a href="#why">Why DiskLoom</a>
       <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
       <a href="support.html">Support</a>
       <a class="nav-action" href="#pricing">Get DiskLoom</a>
     </nav>
@@ -44,14 +46,14 @@
     <section class="status-band" aria-label="Product highlights">
       <div><span class="status-dot" aria-hidden="true"></span><strong>Native Apple NVMe</strong><span>Direct macOS telemetry</span></div>
       <div><strong>Backup Readiness</strong><span>Local Time Machine status</span></div>
-      <div><strong>Zero setup</strong><span>Universal diagnostics included</span></div>
+      <div><strong>Zero setup</strong><span>Universal diagnostics and widget included</span></div>
     </section>
 
     <section class="feature-band" id="monitoring">
       <div class="feature-copy">
         <p class="eyebrow">Early warning</p>
         <h2>See the change, not just the current number.</h2>
-        <p>DiskLoom tracks temperature, endurance, spare capacity, media errors, unsafe shutdowns, and connection events. Every warning explains the signal and rule that triggered it.</p>
+        <p>DiskLoom tracks temperature, endurance, spare capacity, media errors, unsafe shutdowns, connection events, and backup readiness. Every warning explains the signal and rule that triggered it.</p>
       </div>
       <ul class="metric-list" aria-label="Monitored drive signals">
         <li><span>Temperature</span><strong>Trend</strong></li>
@@ -62,6 +64,23 @@
       </ul>
     </section>
 
+    <section class="showcase" aria-labelledby="showcase-title">
+      <div class="section-heading">
+        <p class="eyebrow">A closer look</p>
+        <h2 id="showcase-title">Every reading, explained in plain language.</h2>
+      </div>
+      <figure>
+        <img src="assets/diskloom-overview.png" width="2560" height="1640"
+             alt="DiskLoom Protection overview showing drive condition, Time Machine backup readiness, and a recommended action.">
+        <figcaption>Protection overview: drive condition, backup readiness, and the next useful action in one place.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/diskloom-detail.png" width="2560" height="1640"
+             alt="DiskLoom device detail showing SSD life remaining, written data, power-on hours, temperature, and health indicators.">
+        <figcaption>Drive detail: evidence behind the status, lifetime context, and the signals that matter.</figcaption>
+      </figure>
+    </section>
+
     <section class="workflow-band" aria-labelledby="workflow-title">
       <div class="section-heading">
         <p class="eyebrow">Built for daily use</p>
@@ -69,8 +88,53 @@
       </div>
       <div class="workflow-grid">
         <article><span>01</span><h3>Protection overview</h3><p>See drive condition, Time Machine recency, and the next action in one quiet view.</p></article>
-        <article><span>02</span><h3>Health history</h3><p>Compare up to one year of local samples with warning and connection events.</p></article>
-        <article><span>03</span><h3>Advanced diagnostics</h3><p>Inspect SMART attributes, logs, self-tests, capabilities, and redacted reports when needed.</p></article>
+        <article><span>02</span><h3>Health history</h3><p>Compare 24 hours, 7 days, 30 days, or one year with warning and connection markers.</p></article>
+        <article><span>03</span><h3>Advanced diagnostics</h3><p>Inspect SMART attributes, logs, self-tests, capabilities, lifetime evidence, and privacy-redacted reports.</p></article>
+      </div>
+    </section>
+
+    <section class="why-band" id="why" aria-labelledby="why-title">
+      <div class="section-heading">
+        <p class="eyebrow">Why DiskLoom</p>
+        <h2 id="why-title">More than a row of SMART numbers.</h2>
+      </div>
+      <div class="why-grid">
+        <article>
+          <h3>Honest compatibility</h3>
+          <p>Unknown is never dressed up as healthy. A USB bridge that hides SMART is reported as a limitation — not a failing disk.</p>
+        </article>
+        <article>
+          <h3>Backup readiness</h3>
+          <p>Drive health and your latest Time Machine backup in one view, so you know you're covered before something breaks.</p>
+        </article>
+        <article>
+          <h3>Native Apple NVMe</h3>
+          <p>Reads Apple's internal NVMe telemetry directly — temperature, wear, spare, and errors — with no drivers or Homebrew.</p>
+        </article>
+        <article>
+          <h3>Lifetime intelligence</h3>
+          <p>Combines reported SSD wear, write rate, and power-on age. HDD age estimates are clearly marked as heuristics, never manufacturer promises.</p>
+        </article>
+        <article>
+          <h3>Read-only speed test</h3>
+          <p>Measure sequential read throughput without creating test files or writing to the selected drive.</p>
+        </article>
+        <article>
+          <h3>Private by design</h3>
+          <p>Telemetry stays on your Mac. The internet is used only for license checks and updates, and exported reports are redacted.</p>
+        </article>
+        <article>
+          <h3>Widget and weekly summary</h3>
+          <p>Keep the worst current condition visible at a glance and receive a compact weekly health summary.</p>
+        </article>
+        <article>
+          <h3>Zero setup</h3>
+          <p>A universal diagnostics engine is bundled. Nothing to install and no Rosetta required on Apple silicon or Intel.</p>
+        </article>
+        <article>
+          <h3>Reports that travel</h3>
+          <p>Export a polished PDF health report, CSV history, or a privacy-redacted diagnostic report for support.</p>
+        </article>
       </div>
     </section>
 
@@ -81,15 +145,61 @@
       <a href="support.html#external-drives">Learn about external drives <span aria-hidden="true">→</span></a>
     </section>
 
+    <section class="trust-band" aria-label="Trust and safety">
+      <div><strong>Read-only</strong><span>Never writes to your drives</span></div>
+      <div><strong>Private &amp; local</strong><span>Telemetry stays on your Mac</span></div>
+      <div><strong>Release-ready</strong><span>Signing and notarization before publication</span></div>
+      <div><strong>macOS 14+</strong><span>Apple silicon and Intel</span></div>
+    </section>
+
     <section class="pricing-band" id="pricing">
       <div>
         <p class="eyebrow">Personal license</p>
         <h2>€39</h2>
         <p>One payment. Up to three Macs. All DiskLoom 1.x updates included.</p>
+        <ul class="value-list">
+          <li>Up to 3 Macs on one license</li>
+          <li>All DiskLoom 1.x updates included</li>
+          <li>14-day full-featured trial included</li>
+          <li>One-time price — no subscription</li>
+        </ul>
       </div>
       <div class="pricing-actions">
         <span class="coming-soon" aria-label="DiskLoom will be available on Gumroad soon">Coming soon on Gumroad</span>
-        <span>14-day full trial planned for launch</span>
+        <span>Draft product prepared; download follows notarization</span>
+      </div>
+    </section>
+
+    <section class="faq-band" id="faq" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-title">Good to know before you buy.</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Will DiskLoom work with my external USB drive?</summary>
+          <p>Many USB enclosures don't pass SMART data through to macOS. DiskLoom tries several access methods and, when the bridge blocks it, tells you clearly instead of guessing. Internal drives and many quality enclosures are fully supported.</p>
+        </details>
+        <details>
+          <summary>Is it safe — can it damage my drive?</summary>
+          <p>DiskLoom is strictly read-only. Even its optional speed test reads existing files and never creates test data, formats, or modifies drives, partitions, or firmware.</p>
+        </details>
+        <details>
+          <summary>Is this a one-time price or a subscription?</summary>
+          <p>One payment of €39 covers up to three Macs and every DiskLoom 1.x update. There is no subscription.</p>
+        </details>
+        <details>
+          <summary>Is there a trial or a refund?</summary>
+          <p>Yes. A 14-day, full-featured trial is built into the app so you can confirm DiskLoom reads your drives before paying.</p>
+        </details>
+        <details>
+          <summary>What does DiskLoom require?</summary>
+          <p>macOS 14 (Sonoma) or later, on Apple silicon or Intel. The diagnostics engine is bundled — no Homebrew or Rosetta needed.</p>
+        </details>
+        <details>
+          <summary>What is SMART, exactly?</summary>
+          <p>SMART is the health data your drive keeps about itself — temperature, wear, reallocated sectors, and errors. DiskLoom reads it, scores it, and explains what each signal means.</p>
+        </details>
       </div>
     </section>
   </main>
